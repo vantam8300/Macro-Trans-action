@@ -83,7 +83,7 @@ async function spin() {
   fiveStarItems.text(fiveStar);
 
   //display total items
-  totalItems = parseInt(totalItems) + 9;
+  totalItems = parseInt(totalItems) + 10;
   totalItemsEl.text(totalItems)
 }
 
