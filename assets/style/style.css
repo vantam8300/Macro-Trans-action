@@ -3,6 +3,16 @@
     padding:0;
 }
 
+/* Flexbox for help and resources */
+.help-container {
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    object-position: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Positioning Classes */
 .text-left {
     text-align: left;
