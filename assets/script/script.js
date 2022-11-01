@@ -162,3 +162,25 @@ init();
     End Simulator
     Van Tam 
 */
+
+// nav
+let pages = $(".intro, .fact, .simulator, .help-container");
+
+let navBar = $(".navBar");
+
+navBar.on("click", "a", function (event) {
+
+  event.preventDefault();
+
+  for (let i=0; i<pages.length; i++) {
+
+    if ($(this).data("index") == i) {
+
+      $(pages[i]).attr("class","block");
+
+    } else {
+      
+      $(pages[i]).attr("class","hidden");
+    }
+  }
+})
