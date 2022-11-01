@@ -12,49 +12,49 @@
 <body>
     <header class="grid grid-cols-2 bg-blue-600 text-orange-200 min-h-fit justify-between">
         <h1 class="text-6xl ">Macro Trans-Action</h1>
-        <nav class="">
+        <nav class="navBar">
             <ul class="grid grid-cols-2 md:grid-cols-4 text-xl justify-between ">
-                <li> <a href="">Home</a></li>
-                <li> <a href="">Facts and Information</a></li>
-                <li> <a href="">Examples of Predatory actions</a></li>
-                <li> <a href="">Resources and Help</a></li>
+                <li> <a data-index="0">Home</a></li>
+                <li> <a data-index="1">Facts</a></li>
+                <li> <a data-index="2">Examples</a></li>
+                <li> <a data-index="3">Resources</a></li>
             </ul>
         </nav>
     </header>
    <!-- Front Page Begins -->
     <main class="bg-orange-200 min-h-screen">
         <div class = "intro">
-            <div class="grid grid-col-2 text-center">
+            <div class="grid grid-row-2 text-center">
                 <h1 class="text-4xl">It's time to learn about Micro-transaction!</h1>
                 <h2 class="text-2xl">and how game companies make billions off gamers everyday...</h2>
             </div>
+            <div class="images">
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between">
+                    <div class="px-4">
+                        <img id="loot-box" src="assets/img/lootbox.jpg" alt="Loot-Boxes" class="object-cover h-auto shadow rounded"/>
+                        <div class="name text-2xl">Lootbox 
+                            <br />Priceless loot could be 1 tap away! Just swipe away...
+                        </div>
+                    </div>
+                    
+                    <div class="px-4">
+                        <img id="store" src="assets/img/gamestore.webp" alt="In-game-store" class="object-cover h-auto shadow rounded"/>
+                        <div class="name text-2xl">In game store
+                            <br />Look at all the Great deals!
+                        </div>
+                    </div>
+    
+                    <div class="px-4">
+                        <img id="cosmetic" src="assets/img/skins.png" class="object-cover h-auto shadow rounded"/>
+                        <div class="name text-2xl">Paid Cosmetics
+                            <br />Dont be a loser with no skins lol
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
-        <div class="images">
-            <section class="flex flex-wrap justify-center">
-
-                <div class="w-6/12 sm:w-4/12 px-4">
-                    <img id="loot-box" src="assets/img/lootbox.jpg" alt="Loot-Boxes" class="object-cover max-w-xl h-auto h-auto shadow rounded"/>
-                    <div class="name text-2xl">Lootbox 
-                        <br />Priceless loot could be 1 tap away! Just swipe away...
-                    </div>
-                </div>
-                
-                <div class="w-6/12 sm:w-4/12 px-4">
-                    <img id="store" src="assets/img/gamestore.webp" alt="In-game-store" class="object-cover max-w-xl h-auto h-auto shadow rounded"/>
-                    <div class="name text-2xl">In game store
-                        <br />Look at all the Great deals!
-                    </div>
-                </div>
-
-                <div class="w-6/12 sm:w-4/12 px-4">
-                    <img id="cosmetic" src="assets/img/skins.png" class="object-cover max-w-xl h-auto h-auto shadow rounded"/>
-                    <div class="name text-2xl">Paid Cosmetics
-                        <br />Dont be a loser with no skins lol
-                    </div>
-                </div>
-            </section>
-        </div>
+        
         <!--Front Page end-->
         <div></div> 
 
@@ -63,7 +63,7 @@
         <!-- Start Simulator 
              Van Tam
         -->
-        <div class="simulator">
+        <div class="simulator hidden">
             <section class="grid grid-cols-1 md:grid-cols-2">
 
                 <div class="grid grid-rows-3 text-center my-8 text-4xl">
@@ -139,7 +139,7 @@
         -->
 
         <!-- Resources and help -->
-        <div class="help-container">
+        <div class="help-container hidden">
             <section class="grid grid-cols-1 text-center my-8 text-4xl flex w-full object-center w-full px-4 py-8">
                 <h3 class="font-bold text-6xl pb-8">
                     Help and Resources
