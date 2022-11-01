@@ -3,7 +3,7 @@
 ![picture of webpage](assets/img/homePage.PNG)
 
 ## Description 📝
-This website is built to inform the danger of the microtransaction. Users are presented with images of common microtransactions actions. This website demonstrates data and information about microtransactions. There is a simulator that illustrates how much money users spend on games to get a five-star item. Some resources are privoded to helps people avoid microtransactions.
+This website is built to inform gamers of the danger that is microtransactions. Users are presented with images of common microtransactions actions. This website demonstrates data and statistics about microtransactions in games today.. There is a simulator that illustrates an example of how much money users spend on games to get a five-star item. Some resources are provided to help people avoid microtransactions.
 
 ## Tech/framework used 
 - HTML/CSS
