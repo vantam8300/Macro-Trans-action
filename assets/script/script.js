@@ -229,3 +229,39 @@ navBar.on("click", "a", function (event) {
     }
   }
 })
+
+// API
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'd757a758f4msh1b11a3ad55630b5p174c1ajsnc657c13fbfc2',
+    'X-RapidAPI-Host': 'steamcharts.p.rapidapi.com'
+  }
+};
+
+fetch('https://steamcharts.p.rapidapi.com/api/v1/games/tops', options)
+.then(function (response) {
+  return response.json();
+})
+.then(function (data) {
+  displayModal(data)
+  console.log(data);
+});
+
+
+
+function displayModal(data) {
+    let tableBody = $('.table-body');
+    for (let i=0; i<data.length; i++) {
+      let row = $('<tr class="border-b">');
+      let name = $(`<td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">${data[i].name}</td>`);
+      let currentPlayers = $(`<td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">${data[i].currentPlayers}</td>`)
+      let peakPlayers = $(`<td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">${data[i].peakPlayers}</td>`)
+      row.append(name);
+      row.append(currentPlayers);
+      row.append(peakPlayers);
+      tableBody.append(row);
+    }
+  }
+
+  // end API
