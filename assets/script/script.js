@@ -1,3 +1,48 @@
+// Image switch
+let toggle = true;
+
+const img1 = document.getElementById('loot-box');
+
+
+img1.addEventListener('click', function(){
+  
+  toggle = !toggle;
+  if(toggle){
+      img1.src = 'assets/img/lootbox.jpg';
+  }else{
+      img1.src = 'assets/img/money.jpg';
+  }
+ 
+
+})
+
+const img2 = document.getElementById('store');
+
+img2.addEventListener('click', function(){
+ 
+  toggle = !toggle;
+  if(toggle){
+      img2.src = 'assets/img/gamestore.webp';
+  }else{
+      img2.src = 'assets/img/money.jpg';
+  }
+ 
+
+})
+
+const img3 = document.getElementById('cosmetic');
+
+img3.addEventListener('click', function(){
+  
+  toggle = !toggle;
+  if(toggle){
+      img3.src = 'assets/img/skins.png';
+  }else{
+      img3.src = 'assets/img/money.jpg';
+  }
+ 
+
+})
 /* 
     Start Simulator
     Van Tam 
