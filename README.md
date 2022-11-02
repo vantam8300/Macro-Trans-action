@@ -1,4 +1,4 @@
-# Macro-Trans-action
+# Micro-Trans-action
 
 ![picture of webpage](assets/img/homePage.PNG)
 
