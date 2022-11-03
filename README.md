@@ -19,4 +19,4 @@ This website is built to inform gamers of the danger that is microtransactions. 
 
 ## Website
 
-https://vantam8300.github.io/Macro-Trans-action/
+https://vantam8300.github.io/Micro-Trans-action/
